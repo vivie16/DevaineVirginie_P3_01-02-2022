@@ -9,10 +9,14 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-.recherche {
-  padding: 10%;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .recherche {
+    padding: 10%;
+  }
+  .recherche .barre-recherche {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

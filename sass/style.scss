@@ -7,8 +7,12 @@ body {
 h1{
     font-family: 'Shrikhand', cursive;
 }
+@media screen and (max-width: 768px){
 .recherche {
     padding: 10%;
-    display: flex;
-    justify-content: center;
+    .barre-recherche {
+        display: flex;
+        justify-content: center;
+    }
+}
 }
