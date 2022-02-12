@@ -4,22 +4,22 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 1% 0%;
+    width: 100%;
 }
 img {
     object-fit: cover;
 }
 #logo {
-    padding: 3% 10%;
+    padding: 3% 0;
     img {
         display: flex;
         justify-content: center;
-        width: 100%;
 }
 }
 #recherche {
     padding: 0;
     margin: 2% 0;
-    
+    width: 100%;
     #barre-recherche {
         display: flex;
         justify-content: center;
@@ -50,5 +50,48 @@ img {
         padding: 3% ;
         border: none;
         margin: 2%;
+    }
+}
+#fonctionnement {
+    width: 90%;
+    h2 {
+        margin-bottom: 35px;
+    }
+    #ordre-fonc {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ligne-fonc {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        padding: 10px 0;
+        margin-left: 15px;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #a16be0;
+        padding: 12px;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        margin-left: -15px;
+    }
+    .fas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+        padding: 15px;
+        width: 1%;
+    }
+    p {
+        font-weight: bold;
     }
 }
