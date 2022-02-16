@@ -33,8 +33,9 @@ a {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
-  padding: 2%;
+  padding: 1%;
   box-shadow: inset 0 2px lightgrey;
+  align-items: center;
 }
 #recherche #text {
   display: flex;
@@ -43,27 +44,29 @@ a {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
+  padding: 10px;
 }
 #recherche #text::placeholder {
   color: black;
 }
 #recherche #texte-recherche {
   text-align: center;
-  padding: 2% 10% 10% 10%;
+  padding: 2% 10% 2% 10%;
   background-color: #f6f6f6;
 }
 #recherche button {
   color: white;
   background: linear-gradient(#ff93e1, #a16be0);
   border-radius: 30px;
-  padding: 3%;
+  padding: 15px;
   border: none;
-  margin: 2%;
+  margin: 15px;
+  font-size: inherit;
 }
 
 #fonctionnement {
   width: 100%;
-  margin: 10%;
+  margin: 10px 0 30px 0;
 }
 #fonctionnement h2 {
   margin: 20px;
@@ -124,7 +127,7 @@ a {
   border-radius: 15px;
   color: black;
   background-color: white;
-  margin: 20px;
+  margin: 2%;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
 }
 #resto .menu .nouveau {
@@ -221,6 +224,70 @@ footer .fas {
 }
 footer p {
   margin: 2px 20px;
+}
+
+/* ---------------------------- Tablettes ---------------------------- */
+@media screen and (min-width: 768px) {
+  #fonctionnement h2 {
+    padding: 0 30px;
+  }
+  #fonctionnement #ordre-fonc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  #fonctionnement #ordre-fonc .ligne-fonc {
+    width: 33%;
+  }
+
+  #resto h2 {
+    padding: 0 30px;
+  }
+  #resto #ordre-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #resto #ordre-menu .menu {
+    width: 45%;
+    height: 280px;
+  }
+  #resto #ordre-menu img {
+    height: 200px;
+  }
+  #resto #ordre-menu .nouveau {
+    right: inherit;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+/* ---------------------------- Desktop ---------------------------- */
+@media screen and (min-width: 992px) {
+  #recherche {
+    font-size: 20px;
+  }
+  #recherche #text {
+    font-size: 20px;
+  }
+
+  #fonctionnement {
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  #resto {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
