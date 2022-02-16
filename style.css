@@ -11,12 +11,17 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 #logo {
   padding: 3% 0;
 }
 #logo img {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 #recherche {
@@ -57,15 +62,17 @@ img {
 }
 
 #fonctionnement {
-  width: 90%;
+  width: 100%;
+  margin: 10%;
 }
 #fonctionnement h2 {
-  margin-bottom: 35px;
+  margin: 20px;
 }
 #fonctionnement #ordre-fonc {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
 }
 #fonctionnement .ligne-fonc {
   display: flex;
@@ -75,6 +82,7 @@ img {
   border-radius: 20px;
   padding: 10px 0;
   margin-left: 15px;
+  box-shadow: 0px 3px 10px 1px #CCCCCC;
 }
 #fonctionnement span {
   display: flex;
@@ -98,6 +106,94 @@ img {
 }
 #fonctionnement p {
   font-weight: bold;
+  padding-right: 20px;
+}
+
+#resto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f6f6f6;
+  gap: 20px;
+}
+#resto h2 {
+  margin: 50px 0 0 20px;
+}
+#resto .menu {
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 3px 10px 1px #CCCCCC;
+}
+#resto .menu .nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  right: 30px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+#resto .menu .nouveau p {
+  margin: 5px 10px;
+  color: #1b6150;
+  font-weight: bold;
+}
+#resto .menu img {
+  display: flex;
+  width: 100%;
+  height: 125px;
+  border-radius: 15px 15px 0 0;
+}
+#resto .menu .text-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#resto .menu .text-menu h3 {
+  margin: 15px 0px 0px 0px;
+}
+#resto .menu .text-menu p {
+  margin: 5px 0px 10px 0px;
+}
+#resto .menu .text-menu .fa-heart {
+  color: white;
+  font-size: xx-large;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+#resto .menu .text-menu .fa-heart:hover {
+  animation: heart 0.5s linear forwards;
+}
+@keyframes heart {
+  0% {
+    opacity: 0.25;
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  50% {
+    opacity: 0.5;
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+}
+#resto .menu .text-menu .fa-heart:active {
+  background: linear-gradient(#a16be0, #ff93e1);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
