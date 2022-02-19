@@ -95,37 +95,43 @@ header img {
 #menu h2 {
   text-transform: uppercase;
 }
-#menu #entre {
+#menu .groupe {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#menu #entre .choix {
+#menu .groupe .choix {
   display: flex;
-  justify-content: space-between;
   color: black;
   background-color: white;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
   border-radius: 20px;
 }
-#menu #entre .choix .text-menu {
+#menu .groupe .choix .text-menu {
   padding: 10px 0 5px 20px;
+  width: 100%;
 }
-#menu #entre .choix .text-menu .prix {
+#menu .groupe .choix .text-menu .prix {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-#menu #entre .choix .text-menu .prix p {
-  margin: 10px 0;
+#menu .groupe .choix .text-menu .prix p {
+  margin: 5px 0;
 }
-#menu #entre .choix .ok {
+#menu .groupe .choix .text-menu .prix span {
+  padding-right: 20px;
+}
+#menu .groupe .choix .ok {
+  display: none;
+}
+#menu .groupe .choix:hover .ok {
   display: flex;
-  justify-content: center;
   right: 10px;
   align-items: center;
   background: #99E2D0;
-  color: #fff;
+  color: white;
   border-radius: 0 15px 15px 0;
   padding: 20px;
 }
