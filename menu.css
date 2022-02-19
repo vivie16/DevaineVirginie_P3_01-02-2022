@@ -80,7 +80,7 @@ header img {
 }
 #nom-resto .fa-heart:active {
   background: linear-gradient(#a16be0, #ff93e1);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 0;
 }
@@ -89,21 +89,43 @@ header img {
   display: flex;
   flex-direction: column;
   margin: 2%;
+  padding: 2%;
+  gap: 20px;
 }
 #menu h2 {
   text-transform: uppercase;
 }
-#menu .choix {
+#menu #entre {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  *border-radius: 15px;
+  flex-direction: column;
+  gap: 20px;
+}
+#menu #entre .choix {
   color: black;
   background-color: white;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
   border-radius: 20px;
+}
+#menu #entre .choix .text-menu {
+  padding: 10px 0 5px 20px;
+}
+#menu #entre .choix .text-menu .prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu #entre .choix .text-menu .prix p {
+  margin: 10px 0;
+}
+#menu #entre .choix .ok {
+  display: flex;
+  justify-content: center;
+  right: 10px;
+  align-items: center;
+  background: #99E2D0;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  padding: 20px;
 }
 
 #button {

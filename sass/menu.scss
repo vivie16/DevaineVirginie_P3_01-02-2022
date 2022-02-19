@@ -78,7 +78,7 @@ header {
         }
         &:active {
             background: linear-gradient($purple, $pink);
-            -webkit-background-clip: text;
+            background-clip: text;
             color: transparent;
             -webkit-text-stroke-width: 0;
         }
@@ -88,20 +88,44 @@ header {
     display: flex;
     flex-direction: column;
     margin: 2%;
+    padding: 2%;
+    gap: 20px;
     h2 {
         text-transform: uppercase;
     }
-    .choix {
+    #entre{
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;*border-radius: 15px;
-        color: black;
-        background-color: white;
-        box-shadow: 0px 3px 10px 1px #CCCCCC;
-        border-radius: 20px;
-        
+        flex-direction: column;
+        gap: 20px;
+        .choix {
+            
+            color: black;
+            background-color: white;
+            box-shadow: 0px 3px 10px 1px #CCCCCC;
+            border-radius: 20px;
+            .text-menu {
+                padding: 10px 0 5px 20px;
+                .prix {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+            }
+            .ok{
+                display: flex;
+                justify-content: center;
+                right: 10px;
+                align-items: center;
+                background: #99E2D0;
+                color: #fff;
+                border-radius: 0 15px 15px 0;
+                padding: 20px;
+                
+            }
+        }
     }
 }
 #button {
