@@ -23,13 +23,17 @@ a {
 
 header {
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 header .fas {
+  color: black;
   position: absolute;
-  left: 20px;
+  top: 7%;
+  left: 5%;
   font-size: xx-large;
+  cursor: pointer;
+  padding-bottom: 10px;
 }
 header img {
   height: 80%;
@@ -51,6 +55,7 @@ header img {
   font-size: xx-large;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
+  cursor: pointer;
 }
 #nom-resto .fa-heart:hover {
   animation: heart 0.5s linear forwards;
@@ -94,11 +99,53 @@ header img {
 }
 #menu h2 {
   text-transform: uppercase;
+  border-bottom: 4px solid #99E2D0;
+  width: 10%;
+  padding-bottom: 5px;
 }
 #menu .groupe {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+#menu .groupe .glisser1 {
+  animation: glisser 1s;
+}
+@keyframes glisser {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#menu .groupe .glisser2 {
+  animation: glisser 1.25s;
+}
+@keyframes glisser {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#menu .groupe .glisser3 {
+  animation: glisser 1.5s;
+}
+@keyframes glisser {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 #menu .groupe .choix {
   display: flex;
@@ -106,6 +153,7 @@ header img {
   background-color: white;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
   border-radius: 20px;
+  cursor: pointer;
 }
 #menu .groupe .choix .text-menu {
   padding: 10px 0 5px 20px;
@@ -124,22 +172,38 @@ header img {
   padding-right: 20px;
 }
 #menu .groupe .choix .ok {
-  display: none;
+  visibility: hidden;
 }
 #menu .groupe .choix:hover .ok {
+  visibility: visible;
   display: flex;
-  right: 10px;
   align-items: center;
   background: #99E2D0;
   color: white;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   padding: 20px;
+  transition: 0.5S ease-in-out;
+}
+#menu .groupe .choix .fas {
+  color: white;
+}
+#menu .groupe .choix:hover .fas {
+  animation: rotate-center 0.5s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #button {
   display: flex;
   justify-content: center;
   margin: 50px;
+  cursor: pointer;
 }
 #button span {
   color: white;
@@ -161,6 +225,7 @@ footer {
 footer h3 {
   font-family: "shrikhand", sans-serif;
   padding: 0 20px;
+  font-weight: lighter;
 }
 footer .foot {
   display: flex;
