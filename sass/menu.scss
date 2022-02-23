@@ -17,7 +17,7 @@ h1 {
 img {
     object-fit: cover;
     width: 100%;
-    
+    height: 250px;
 }
 a {
     text-decoration: none; 
@@ -29,26 +29,28 @@ header {
     .fas {
         color: black;
         position: absolute;
-        top: 7%;
         left: 5%;
         font-size: xx-large;
         cursor: pointer;
         padding-bottom: 10px;
     }
     img {
-        height: 80%;
-        width: 80%;
+        height: 100%;
     }
 }
+section{
+    width: 100%;
+}
+
 #nom-resto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: $lightgrey;
     border-radius: 40px ;
     margin: -40px 0;
     position: relative;
+    background-color: $lightgrey;
     .fa-heart {
         color: white;
         font-size: xx-large;
@@ -83,28 +85,34 @@ header {
         }
         &:active {
             background: linear-gradient($purple, $pink);
-            background-clip: text;
+            -webkit-background-clip: text;
             color: transparent;
             -webkit-text-stroke-width: 0;
         }
     }
 }
+#ordre{
+    background-color: $lightgrey;
+}
 #menu {
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    padding: 2%;
+    justify-content: space-around;
+    padding: 4%;
     gap: 20px;
+    width: auto;
     h2 {
         text-transform: uppercase;
         border-bottom: 4px solid $green;
-        width: 10%;
+        width: 60px;
         padding-bottom: 5px;
+        font-weight: inherit;
     }
     .groupe{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
         .glisser1 {
             animation: glisser 1s;
                 
@@ -147,6 +155,20 @@ header {
                     }
                 }
             }  
+        .glisser4 {
+            animation: glisser 1.75s;
+                
+                @keyframes glisser {
+                    0%{
+                        transform: translateY(25px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            } 
         .choix {
             display: flex;
             color: black;
@@ -156,48 +178,62 @@ header {
             cursor: pointer;
             .text-menu {
                 padding: 10px 0 5px 20px;
-                width: 100%;
-                
+                width: 90%;
                 .prix {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-                    p {
+                    .text-prix{
                         margin: 5px 0;
+                        overflow: hidden;
+                        p {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
                     }
                     span {
-                        padding-right: 20px;
+                        padding-right: 10px;
                     }
                 }
             }
             .ok{
                 visibility: hidden; 
             }
-            &:hover .ok {
-                visibility: visible;
-                display: flex;
-                align-items: center;
-                background: #99E2D0;
-                color: white;
-                border-radius: 0 20px 20px 0;
-                padding: 20px;
-                transition:  0.5S ease-in-out;
-            }
-            .fas {
-                color: white;
-            }
-            &:hover .fas {
-                animation: rotate-center 0.5s ease-in-out both;
-                @keyframes rotate-center {
-                    0% {
-                        
-                        transform: rotate(0);
+            &:hover {
+                .text-prix{
+                    overflow: hidden;
+                    p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
-                    100% {
-                        transform: rotate(360deg);
+                }
+                .ok {
+                    visibility: visible;
+                    display: flex;
+                    align-items: center;
+                    background: #99E2D0;
+                    color: white;
+                    border-radius: 0 20px 20px 0;
+                    padding: 20px;
+                    transition:  0.5S ease-in-out;
+                }
+                 .fas {
+                    color: white;
+                    animation: rotate-center 0.5s ease-in-out both;
+                    @keyframes rotate-center {
+                        0% {
+                            
+                            transform: rotate(0);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
                     }
-                 }
+            }
+                
             }
         }
     }
@@ -205,7 +241,7 @@ header {
 #button {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    padding: 3% 0 7% 0;
     cursor: pointer;
     span {
         color: white;
@@ -240,5 +276,47 @@ footer {
     }
     p{
         margin: 2px 20px;
+    }
+}
+/* ---------------------------- Tablettes ---------------------------- */
+@media screen and (min-width: 800px){
+    header {
+        img {
+        height: 60px;
+        }
+        .fas{
+            top: 30px;
+        }
+    }
+    #button {
+        span {
+            padding: 30px 50px;
+            font-size: x-large;
+            border-radius: 50px;
+        }
+    }
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+/* ---------------------------- Desktop ---------------------------- */
+@media screen and (min-width: 1000px){
+    img{
+        height: 400px;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        .groupe {
+            width: 33%;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    footer {
+        font-size: 20px;
     }
 }

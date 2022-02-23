@@ -1,0 +1,478 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1% 0 0 0;
+  width: 100%;
+}
+
+#chargement img {
+  color: #ff93e1;
+  -webkit-animation: rotate-center 1s ease-in-out both;
+          animation: rotate-center 1s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  padding: 3% 0;
+}
+
+#logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#recherche {
+  padding: 0;
+  margin: 2% 0;
+  width: 100%;
+}
+
+#recherche #barre-recherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  padding: 1%;
+  -webkit-box-shadow: inset 0 2px lightgrey;
+          box-shadow: inset 0 2px lightgrey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#recherche #text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: #eaeaea;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#recherche #text::-webkit-input-placeholder {
+  color: black;
+}
+
+#recherche #text:-ms-input-placeholder {
+  color: black;
+}
+
+#recherche #text::-ms-input-placeholder {
+  color: black;
+}
+
+#recherche #text::placeholder {
+  color: black;
+}
+
+#recherche #texte-recherche {
+  text-align: center;
+  padding: 2% 10% 2% 10%;
+  background-color: #f6f6f6;
+}
+
+#recherche button {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
+  border-radius: 30px;
+  padding: 15px;
+  border: none;
+  margin: 15px;
+  font-size: inherit;
+}
+
+#fonctionnement {
+  width: 100%;
+  margin: 10px 0 30px 0;
+}
+
+#fonctionnement h2 {
+  margin: 20px;
+}
+
+#fonctionnement #ordre-fonc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+#fonctionnement .ligne-fonc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-left: 15px;
+  -webkit-box-shadow: 0px 3px 10px 1px #CCCCCC;
+          box-shadow: 0px 3px 10px 1px #CCCCCC;
+}
+
+#fonctionnement span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #a16be0;
+  padding: 12px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin-left: -15px;
+}
+
+#fonctionnement .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: grey;
+  padding: 15px;
+  width: 1%;
+}
+
+#fonctionnement p {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+#resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #f6f6f6;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+#resto h2 {
+  margin: 50px 0 0 20px;
+}
+
+#resto .menu {
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+  margin: 2%;
+  -webkit-box-shadow: 0px 3px 10px 1px #CCCCCC;
+          box-shadow: 0px 3px 10px 1px #CCCCCC;
+  position: relative;
+}
+
+#resto .menu .nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  right: 30px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+#resto .menu .nouveau p {
+  margin: 5px 10px;
+  color: #1b6150;
+  font-weight: bold;
+}
+
+#resto .menu img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 125px;
+  border-radius: 15px 15px 0 0;
+}
+
+#resto .menu .text-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+#resto .menu .text-menu h3 {
+  margin: 15px 0px 0px 0px;
+}
+
+#resto .menu .text-menu p {
+  margin: 5px 0px 10px 0px;
+}
+
+#resto .menu .text-menu .fa-heart {
+  color: white;
+  font-size: xx-large;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  cursor: pointer;
+}
+
+#resto .menu .text-menu .fa-heart:hover {
+  -webkit-animation: heart 0.5s linear forwards;
+          animation: heart 0.5s linear forwards;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0.25;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  50% {
+    opacity: 0.5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  100% {
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0.25;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  50% {
+    opacity: 0.5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+  100% {
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+    background: linear-gradient(#a16be0, #ff93e1);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+}
+
+#resto .menu .text-menu .fa-heart:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16be0), to(#ff93e1));
+  background: linear-gradient(#a16be0, #ff93e1);
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #353535;
+  color: white;
+  padding-bottom: 30px;
+}
+
+footer h3 {
+  font-family: 'shrikhand', sans-serif;
+  padding: 0 20px;
+  font-weight: lighter;
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px 20px;
+}
+
+footer .fas {
+  width: 1%;
+  font-size: small;
+}
+
+footer p {
+  margin: 2px 20px;
+}
+
+/* ---------------------------- Tablettes ---------------------------- */
+@media screen and (min-width: 800px) {
+  #fonctionnement h2 {
+    padding: 0 30px;
+  }
+  #fonctionnement #ordre-fonc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px;
+  }
+  #fonctionnement #ordre-fonc .ligne-fonc {
+    width: 33%;
+  }
+  #resto h2 {
+    padding: 0 30px;
+  }
+  #resto #ordre-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #resto #ordre-menu .menu {
+    width: 45%;
+    height: 280px;
+  }
+  #resto #ordre-menu img {
+    height: 200px;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/* ---------------------------- Desktop ---------------------------- */
+@media screen and (min-width: 1000px) {
+  #recherche {
+    font-size: 20px;
+  }
+  #recherche #text {
+    font-size: 20px;
+  }
+  #fonctionnement {
+    font-size: 20px;
+    margin: 30px;
+  }
+  #resto {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

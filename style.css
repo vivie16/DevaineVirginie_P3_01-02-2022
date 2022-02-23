@@ -7,12 +7,26 @@ body {
   width: 100%;
 }
 
+#chargement img {
+  color: #ff93e1;
+  animation: rotate-center 1s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 img {
   object-fit: cover;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #logo {
@@ -129,6 +143,7 @@ a {
   background-color: white;
   margin: 2%;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
+  position: relative;
 }
 #resto .menu .nouveau {
   position: absolute;
@@ -166,6 +181,7 @@ a {
   font-size: xx-large;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
+  cursor: pointer;
 }
 #resto .menu .text-menu .fa-heart:hover {
   animation: heart 0.5s linear forwards;
@@ -195,9 +211,6 @@ a {
 }
 #resto .menu .text-menu .fa-heart:active {
   background: linear-gradient(#a16be0, #ff93e1);
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-stroke-width: 0;
 }
 
 footer {
@@ -211,6 +224,7 @@ footer {
 footer h3 {
   font-family: "shrikhand", sans-serif;
   padding: 0 20px;
+  font-weight: lighter;
 }
 footer .foot {
   display: flex;
@@ -227,7 +241,7 @@ footer p {
 }
 
 /* ---------------------------- Tablettes ---------------------------- */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   #fonctionnement h2 {
     padding: 0 30px;
   }
@@ -257,9 +271,6 @@ footer p {
   #resto #ordre-menu img {
     height: 200px;
   }
-  #resto #ordre-menu .nouveau {
-    right: inherit;
-  }
 
   footer {
     flex-direction: row;
@@ -268,7 +279,7 @@ footer p {
   }
 }
 /* ---------------------------- Desktop ---------------------------- */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   #recherche {
     font-size: 20px;
   }
