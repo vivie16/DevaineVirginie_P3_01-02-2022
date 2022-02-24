@@ -11,7 +11,24 @@ body {
     width: 100%;
 }
 #page_chargement {
-    background-size:cover;
+    position: fixed ;
+    inset: 0;
+    background: white;
+    display: flex;
+    place-items: center;
+    animation: disparition 3s linear 1;
+    @keyframes disparition {
+        0% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            
+        }
+    }
     #chargement {
         background-size:cover;
         border-right: 10px solid $green;
@@ -22,11 +39,6 @@ body {
         width: 150px;
         height: 150px;
         margin: auto;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-    
         animation: rotation 2s linear infinite;
         @keyframes rotation {
             0% {
