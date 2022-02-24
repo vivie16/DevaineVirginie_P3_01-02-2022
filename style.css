@@ -7,11 +7,26 @@ body {
   width: 100%;
 }
 
-#chargement img {
-  color: #ff93e1;
-  animation: rotate-center 1s ease-in-out both;
+#page_chargement {
+  background-size: cover;
 }
-@keyframes rotate-center {
+#page_chargement #chargement {
+  background-size: cover;
+  border-right: 10px solid #99E2D0;
+  border-top: 10px solid #ff93e1;
+  border-left: 10px solid #a16be0;
+  border-bottom: 10px solid #f6f6f6;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
   0% {
     transform: rotate(0);
   }

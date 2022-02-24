@@ -10,16 +10,31 @@ body {
     margin: 1% 0 0 0;
     width: 100%;
 }
-#chargement img {
-    color: #ff93e1;
-    animation: rotate-center 1s ease-in-out both;
-    @keyframes rotate-center {
-        0% {
-            
-            transform: rotate(0);
-        }
-        100% {
-            transform: rotate(360deg);
+#page_chargement {
+    background-size:cover;
+    #chargement {
+        background-size:cover;
+        border-right: 10px solid $green;
+        border-top: 10px solid $pink;
+        border-left:10px solid $purple ;
+        border-bottom: 10px solid $lightgrey;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    
+        animation: rotation 2s linear infinite;
+        @keyframes rotation {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     }
 }
