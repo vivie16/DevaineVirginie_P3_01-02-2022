@@ -12,11 +12,12 @@ body {
 }
 #page_chargement {
     position: fixed ;
+    z-index: 10;
     inset: 0;
     background: white;
     display: flex;
     place-items: center;
-    animation: disparition 3s linear 1;
+    animation: disparition 3s linear ;
     @keyframes disparition {
         0% {
             opacity: 1;
