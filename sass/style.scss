@@ -17,18 +17,14 @@ body {
     background: white;
     display: flex;
     place-items: center;
+    opacity: 0;
     animation: disparition 3s linear ;
     @keyframes disparition {
         0% {
             opacity: 1;
         }
-        90% {
-            opacity: 1;
-        }
         100% {
-            opacity: 0;
-            height: 0;
-            visibility: hidden;
+            opacity: 1;
             
         }
     }
@@ -41,7 +37,7 @@ body {
         width: 150px;
         height: 150px;
         margin: auto;
-        animation: rotation 3s linear infinite;
+        animation: rotation 2s linear infinite;
         @keyframes rotation {
             0% {
                 transform: rotate(0);
