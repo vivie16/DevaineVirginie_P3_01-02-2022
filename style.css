@@ -9,20 +9,22 @@ body {
 
 #page_chargement {
   position: fixed;
-  z-index: 10;
   inset: 0;
+  z-index: -10;
+  opacity: 0;
   background: white;
   display: flex;
   place-items: center;
-  opacity: 0;
   animation: disparition 3s linear;
 }
 @keyframes disparition {
   0% {
     opacity: 1;
+    z-index: 100;
   }
   100% {
     opacity: 1;
+    z-index: 100;
   }
 }
 #page_chargement #chargement {
@@ -34,7 +36,8 @@ body {
   width: 150px;
   height: 150px;
   margin: auto;
-  animation: rotation 2s linear infinite;
+  z-index: 0;
+  animation: rotation 3s linear infinite;
 }
 @keyframes rotation {
   0% {
@@ -104,6 +107,7 @@ a {
   border: none;
   margin: 15px;
   font-size: inherit;
+  cursor: pointer;
 }
 
 #fonctionnement {
@@ -128,6 +132,7 @@ a {
   padding: 10px 0;
   margin-left: 15px;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
+  cursor: pointer;
 }
 #fonctionnement span {
   display: flex;
