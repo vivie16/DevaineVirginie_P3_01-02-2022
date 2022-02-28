@@ -27,11 +27,12 @@ body {
         }
         100% {
             opacity: 0;
+            height: 0;
+            visibility: hidden;
             
         }
     }
     #chargement {
-        background-size:cover;
         border-right: 10px solid $green;
         border-top: 10px solid $pink;
         border-left:10px solid $purple ;
@@ -40,7 +41,7 @@ body {
         width: 150px;
         height: 150px;
         margin: auto;
-        animation: rotation 2s linear infinite;
+        animation: rotation 3s linear infinite;
         @keyframes rotation {
             0% {
                 transform: rotate(0);
@@ -48,6 +49,9 @@ body {
             100% {
                 transform: rotate(360deg);
             }
+        }
+        &:after {
+            display: none;
         }
     }
 }

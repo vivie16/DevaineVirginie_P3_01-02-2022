@@ -179,6 +179,10 @@ section{
             .text-menu {
                 padding: 10px 0 5px 20px;
                 width: 90%;
+                strong {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
                 .prix {
                     display: flex;
                     flex-direction: row;

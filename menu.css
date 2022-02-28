@@ -182,6 +182,10 @@ section {
   padding: 10px 0 5px 20px;
   width: 90%;
 }
+#menu .groupe .choix .text-menu strong {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 #menu .groupe .choix .text-menu .prix {
   display: flex;
   flex-direction: row;
