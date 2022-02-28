@@ -180,6 +180,7 @@ section{
                 padding: 10px 0 5px 20px;
                 width: 90%;
                 strong {
+                    white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
                 }
@@ -206,6 +207,11 @@ section{
                 visibility: hidden; 
             }
             &:hover {
+                strong {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
                 .text-prix{
                     overflow: hidden;
                     p {

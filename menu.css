@@ -183,6 +183,7 @@ section {
   width: 90%;
 }
 #menu .groupe .choix .text-menu strong {
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -206,6 +207,11 @@ section {
 }
 #menu .groupe .choix .ok {
   visibility: hidden;
+}
+#menu .groupe .choix:hover strong {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #menu .groupe .choix:hover .text-prix {
   overflow: hidden;
