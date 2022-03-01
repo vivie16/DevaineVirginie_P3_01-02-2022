@@ -11,6 +11,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: -10;
+  display: block;
   opacity: 0;
   background: white;
   display: flex;
@@ -25,6 +26,7 @@ body {
   100% {
     opacity: 1;
     z-index: 100;
+    display: none;
   }
 }
 #page_chargement #chargement {
@@ -133,6 +135,13 @@ a {
   margin-left: 15px;
   box-shadow: 0px 3px 10px 1px #CCCCCC;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#fonctionnement .ligne-fonc:hover {
+  background-color: #f5d8ed;
+}
+#fonctionnement .ligne-fonc:hover .fas {
+  color: #a16be0;
 }
 #fonctionnement span {
   display: flex;
@@ -241,9 +250,6 @@ a {
     color: transparent;
     -webkit-text-stroke-width: 0;
   }
-}
-#resto .menu .text-menu .fa-heart:active {
-  background: linear-gradient(#a16be0, #ff93e1);
 }
 
 footer {

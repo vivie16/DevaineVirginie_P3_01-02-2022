@@ -86,12 +86,6 @@ section {
     -webkit-text-stroke-width: 0;
   }
 }
-#nom-resto .fa-heart:active {
-  background: linear-gradient(#a16be0, #ff93e1);
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-stroke-width: 0;
-}
 
 #ordre {
   background-color: #f6f6f6;
@@ -181,7 +175,8 @@ section {
 }
 #menu .groupe .choix .text-menu {
   padding: 10px 0 5px 20px;
-  width: 90%;
+  width: 100%;
+  overflow: hidden;
 }
 #menu .groupe .choix .text-menu strong {
   white-space: nowrap;
@@ -202,12 +197,17 @@ section {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin: 0;
 }
 #menu .groupe .choix .text-menu .prix span {
   padding-right: 10px;
 }
 #menu .groupe .choix .ok {
+  display: flex;
+  align-items: center;
   visibility: hidden;
+  transition: 0.5s ease-in-out;
+  width: 0;
 }
 #menu .groupe .choix:hover strong {
   white-space: nowrap;
@@ -224,16 +224,14 @@ section {
 }
 #menu .groupe .choix:hover .ok {
   visibility: visible;
-  display: flex;
-  align-items: center;
   background: #99E2D0;
   color: white;
   border-radius: 0 20px 20px 0;
   padding: 20px;
   transition: 0.5S ease-in-out;
+  width: 20px;
 }
 #menu .groupe .choix:hover .fas {
-  color: white;
   animation: rotate-center 0.5s ease-in-out both;
 }
 @keyframes rotate-center {
@@ -243,6 +241,9 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+#menu .groupe .choix .fas {
+  color: white;
 }
 
 #button {
